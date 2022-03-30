@@ -2,7 +2,7 @@ import React from 'react'
 
 const UsAddress = () => {
   return (
-    <div className='border p-8 bg-green-100 w-full'>
+    <div className='font-mono border p-8 bg-green-100 w-full'>
       <div className='flex justify-between items-center'>
         <div>
           <h1>Street: 1203 SN Street</h1>
