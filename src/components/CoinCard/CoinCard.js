@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const CoinCard = ({ coin }) => {
   return (
     <div className="bg-white text-slate-900 p-5 rounded-2xl w-[280px] shadow-lg mx-auto">
-      <Link to={'/coins'}>
-        <div className="flex items-center justify-between">
+      <Link to={`coin-details/${coin.id}`}>
+        <div className="flex items-center">
           <div className="w-[70px] mr-5">
             <img src={coin.image} alt="" />
           </div>
