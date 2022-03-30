@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLink";
 
 const Header = () => {
   return (
@@ -8,10 +9,10 @@ const Header = () => {
         <Link to={"/"}>Cryptos</Link>
       </div>
       <div className="flex gap-12 text-xl font-mono my-3 ">
-          <Link className="hover:text-red-500" to={"/"}>Home</Link>
-          <Link className="hover:text-red-500" to={"/coins"}>Coins</Link>
-          <Link className="hover:text-red-500" to={"/contact"}>Contact</Link>
-          <Link className="hover:text-red-500" to={"/about"}>About</Link>
+          <CustomLink className="hover:text-red-500" to={"/"}>Home</CustomLink>
+          <CustomLink className="hover:text-red-500" to={"/coins"}>Coins</CustomLink>
+          <CustomLink className="hover:text-red-500" to={"/contact"}>Contact</CustomLink>
+          <CustomLink className="hover:text-red-500" to={"/about"}>About</CustomLink>
       </div>
     </div>
   );
