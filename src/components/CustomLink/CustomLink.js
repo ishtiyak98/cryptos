@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Link,
-  useMatch,
-  useResolvedPath,
-} from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const CustomLink = ({ children, to, ...props }) => {
   let resolved = useResolvedPath(to);
@@ -11,11 +7,20 @@ const CustomLink = ({ children, to, ...props }) => {
   return (
     <div>
       <Link
-        style={{ color: match ? "rgb(239 68 68)" : "white"}} to={to} {...props}>
+        style={{
+          color: match ? "rgb(239 68 68)" : " ",
+          "&hover": { color: "rgb(239 68 68)" },
+        }}
+        to={to}
+        {...props}
+      >
         {children}
       </Link>
     </div>
   );
 };
 
+// "&:hover": {
+//   background: "#efefef"
+// },
 export default CustomLink;
